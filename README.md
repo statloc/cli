@@ -2,12 +2,10 @@
 
 <div>
     <img src="https://img.shields.io/github/v/release/statloc/cli?sort=semver&display_name=release&style=flat-square&label=latest%20release&color=purple">
-    <a href="https://github.com/statloc/cli/blob/master/go.mod"><img src="https://img.shields.io/badge/go_version-1.24%20|%201.25-purple?style=flat-square&label=go%20version&color=purple">
-    <a href="https://github.com/statloc/cli/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-coffeeware-purple?style=flat-square&label=go%20version&color=purple"></a>
+    <a href="https://github.com/statloc/cli/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-coffeeware-purple?style=flat-square&label=license&color=purple"></a>
     <a href="https://github.com/statloc/cli/stargazers/"><img src="https://img.shields.io/github/stars/statloc/cli?style=flat-square&label=stars&color=purple"></a>
     <a href="https://github.com/statloc/cli/forks/"><img src="https://img.shields.io/github/forks/statloc/cli?style=flat-square&color=purple"></a>
-    <a href="https://github.com/statloc/cli/actions/workflows/check.yml/"><img src="https://img.shields.io/github/actions/workflow/status/statloc/cli/check.yml?branch=dev/0.1.0&style=flat-square&label=checks&color=purple"></a>
-    <a href="https://github.com/statloc/cli/blob/master/go.mod"><img src="https://img.shields.io/badge/go_version-1.24%20|%201.25-purple?style=flat-square&label=go%20version&color=purple"></a>
+    <a href="https://github.com/statloc/cli/actions/workflows/check.yml/"><img src="https://img.shields.io/github/actions/workflow/status/statloc/cli/check.yml?branch=master&style=flat-square&label=checks&color=purple"></a>
 </div>
 
 ### ✏️ About
