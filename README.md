@@ -13,9 +13,9 @@
 - Simple and fast
 
 ### ⚡ Installation
-As a go tool
+Via `go install`
 ```shell
-go get -tool github.com/statloc/cli
+go install github.com/statloc/cli
 ```
 
 ### 📝 Usage
@@ -28,13 +28,9 @@ statloc project_name/
 | Item        | LOC   | Files |
 +-------------+-------+-------+
 | Go          | 2339  | 27    |
-+-------------+-------+-------+
 | Python      | 10398 | 112   |
-+-------------+-------+-------+
 | Rust        | 970   | 11    |
-+-------------+-------+-------+
 | Tests       | 4612  | 43    |
-+-------------+-------+-------+
 | Total       | 13737 | 155   |
 +-------------+-------+-------+
 
