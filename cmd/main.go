@@ -19,7 +19,7 @@ func main () {
         if err != nil {
             fmt.Printf("ERROR: path \"%s\" is not found!!!\n", path)
         } else {
-            fmt.Print(internal.GetTable(response.Items))
+            fmt.Print(internal.GetTable(response.Items, 5, 3, 5))
         }
     }
 }
