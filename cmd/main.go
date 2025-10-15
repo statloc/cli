@@ -17,9 +17,9 @@ func main () {
         response, err := core.GetStatistics(path)
 
         if err != nil {
-            fmt.Printf("Path %s is not found\n", path)
+            fmt.Printf("ERROR: path \"%s\" is not found!!!\n", path)
+        } else {
+            fmt.Print(internal.GetTable(response.Items, 5, 3, 5))
         }
-
-        fmt.Print(internal.GetTable(response.Items))
     }
 }
