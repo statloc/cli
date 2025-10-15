@@ -16,7 +16,7 @@ func TestGetTable(t *testing.T) {
 	defer file.Close() // nolint:errcheck
 
 	statistics, _ := core.GetStatistics("../testdata")
-	table := internal.GetTable(statistics.Items)
+	table := internal.GetTable(statistics.Items, 5, 3, 5)
 
 	// go line by line
 	scanner := bufio.NewScanner(file)
