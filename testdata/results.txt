@@ -1,9 +1,20 @@
+🗣️ Languages
 +--------+-----+-------+
 | Title  | LOC | Files |
 +--------+-----+-------+
-| Tests  | 6   | 2     |
-| Rust   | 4   | 1     |
+| Rust   | 8   | 2     |
 | Go     | 8   | 1     |
-| Python | 2   | 1     |
-| Total  | 24  | 4     |
+| Python | 4   | 2     |
+| C++    | 8   | 2     |
 +--------+-----+-------+
+
+⚡ Components
++-------------+-----+-------+
+| Title       | LOC | Files |
++-------------+-----+-------+
+| Tests       | 10  | 3     |
+| Controllers | 8   | 2     |
++-------------+-----+-------+
+
+📊 Total statistics
+Languages: 4   LOC: 28   Files 7
