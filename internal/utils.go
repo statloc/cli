@@ -8,6 +8,31 @@ import (
 	core "github.com/statloc/core"
 )
 
+func Respond(path string) (result string) {
+        response, err := core.GetStatistics(path)
+
+        if err != nil {
+            return fmt.Sprintf("ERROR: path \"%s\" is not found!!!\n", path)
+        }
+
+        result = fmt.Sprintf(
+`🗣️ Languages
+%s
+⚡ Components
+%s
+📊 Total statistics
+Languages: %d   LOC: %d   Files %d
+`,
+            GetTable(response.Languages, 5, 3, 5),
+            GetTable(response.Components, 5, 3, 5),
+            len(response.Languages),
+            response.Total.LOC,
+            response.Total.Files,
+        )
+
+        return
+}
+
 func GetTable(
     items       map[string]*core.TableItem,
     titleLength int,

@@ -3,7 +3,7 @@ module cli
 go 1.25.1
 
 require (
-	github.com/statloc/core v0.1.1
+	github.com/statloc/core v0.2.0
 	github.com/stretchr/testify v1.11.1
 )
 
