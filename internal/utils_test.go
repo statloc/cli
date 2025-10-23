@@ -20,7 +20,6 @@ func TestRespond(t *testing.T) {
 	// go line by line
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-        println(response, scanner.Text())
 		assert.True(t, strings.Contains(response, scanner.Text()))
 	}
 }
@@ -35,7 +34,6 @@ func TestGetTable(t *testing.T) {
 	// go line by line
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-        println(table, scanner.Text())
 		assert.True(t, strings.Contains(table, scanner.Text()))
 	}
 }
