@@ -11,12 +11,25 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestGetTable(t *testing.T) {
+func TestRespond(t *testing.T) {
     file, _ := os.Open("../testdata/results.txt")
 	defer file.Close() // nolint:errcheck
 
+	response := internal.Respond("../testdata")
+
+	// go line by line
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		assert.True(t, strings.Contains(response, scanner.Text()))
+	}
+}
+
+func TestGetTable(t *testing.T) {
+    file, _ := os.Open("../testdata/languages.txt")
+	defer file.Close() // nolint:errcheck
+
 	statistics, _ := core.GetStatistics("../testdata")
-	table := internal.GetTable(statistics.Items, 5, 3, 5)
+	table := internal.GetTable(statistics.Languages, 5, 3, 5)
 
 	// go line by line
 	scanner := bufio.NewScanner(file)
